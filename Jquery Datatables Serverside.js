@@ -21,7 +21,7 @@ $(document).ready(function() {
 				{ "sName": 'END_DATE' },
 				{ "sName": 'ACTION',"bSortable": false,"mRender": function ( data, type, full) 
 					{
-						return "<a href='' onClick=\"javascript:if('IE'){HelpWindow1=window.open('ospworkflow/bdwo/Editexchange.cfm?S_NO="+data+"','HelpWindow1','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=950,height=500'); return false;}else{HelpWindow1=window.open('ospworkflow/bdwo/Editexchange.cfm?="+data+"','HelpWindow1','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=950,height=500'); return false;}\">Edit</a>" 
+						return "<a href='' onClick=\"javascript:if('IE'){HelpWindow1=window.open('Editexchange.cfm?S_NO="+data+"','HelpWindow1','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=950,height=500'); return false;}else{HelpWindow1=window.open('Editexchange.cfm?="+data+"','HelpWindow1','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=950,height=500'); return false;}\">Edit</a>" 
 					}
 				},
 			],
