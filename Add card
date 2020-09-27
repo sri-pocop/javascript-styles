@@ -7,3 +7,7 @@ usort($date_arr, function($a, $b) {
 
     return $dateTimestamp1 < $dateTimestamp2 ? -1: 1;
 });
+
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
