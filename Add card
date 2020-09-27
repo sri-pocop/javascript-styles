@@ -1,1 +1,9 @@
 https://getbootstrap.com/docs/4.0/components/card/
+
+
+usort($date_arr, function($a, $b) {
+    $dateTimestamp1 = strtotime($a);
+    $dateTimestamp2 = strtotime($b);
+
+    return $dateTimestamp1 < $dateTimestamp2 ? -1: 1;
+});
