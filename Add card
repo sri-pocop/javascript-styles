@@ -14,3 +14,21 @@ $('.navbar-nav>li>a').on('click', function(){
 
 
 setTimeout(function(){ alert("After 5 seconds!"); }, 5000);
+
+
+var startDate = new Date('05/03/2016');
+var endDate = new Date('05/10/2016');
+var numOfDates = getBusinessDatesCount(startDate,endDate);
+
+function getBusinessDatesCount(startDate, endDate) {
+    var count = 0;
+    var curDate = startDate;
+    while (curDate <= endDate) {
+        var dayOfWeek = curDate.getDay();
+        if(!((dayOfWeek == 6) || (dayOfWeek == 0)))
+           count++;
+        curDate.setDate(curDate.getDate() + 1);
+    }
+    alert(count)
+    return count;
+}
