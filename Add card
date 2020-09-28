@@ -11,3 +11,6 @@ usort($date_arr, function($a, $b) {
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+
+setTimeout(function(){ alert("After 5 seconds!"); }, 5000);
