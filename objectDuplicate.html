@@ -1,0 +1,9 @@
+<script>
+    var obj = {"file":[ { "name":"ajith.pdf", "date":"02/10/2006" } , { "name":"ajith.pdf", "date":"02/10/2005" } , { "name":"dom.pdf", "date":"02/10/2005"} ] } ;
+    var files = [];
+    for (i in obj.file) {
+        console.log(files.includes(obj.file[i].name));
+        files.push(obj.file[i].name);
+    }
+    console.log(files);
+</script>
